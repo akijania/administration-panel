@@ -7,15 +7,18 @@
     font-family: $text-font;
     font-size: 14px;
     line-height: 1.7;
-    color: $paragraph-color;
+    color: $text-color;
+    background: $background-hover-color;
   }
   
   .container {
-    width: 100%;
     max-width: 1170px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 15px;
+    padding: 30px 15px;
+    background: $nav-text-color;
+    border-bottom: 1px solid $background-hover-color;
+    border-radius: 4px;
+
   }
   
   .container-fluid {

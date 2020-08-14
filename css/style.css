@@ -350,15 +350,17 @@ body {
   font-family: "Open Sans", Helvetica, Arial;
   font-size: 14px;
   line-height: 1.7;
-  color: #000000;
+  color: #979797;
+  background: #F5F5F2;
 }
 
 .container {
-  width: 100%;
   max-width: 1170px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 15px;
+  padding: 30px 15px;
+  background: white;
+  border-bottom: 1px solid #F5F5F2;
+  border-radius: 4px;
 }
 
 .container-fluid {
@@ -765,6 +767,7 @@ li {
 
 .header-col {
   border: 0.5px solid #979797;
+  background: white;
   width: 100%;
   height: 50px;
   padding: 15px 0;
@@ -784,5 +787,19 @@ li {
 
 .col-arrow {
   padding-top: 10px;
+}
+
+.general-form {
+  text-align: center;
+}
+
+.statistic-col {
+  text-align: left;
+  border-bottom: 1px solid #979797;
+}
+
+.statistic-value {
+  text-align: right;
+  border-bottom: 1px solid #979797;
 }
 /*# sourceMappingURL=style.css.map */
