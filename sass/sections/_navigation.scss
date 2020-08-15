@@ -12,6 +12,7 @@
     padding: 10px;
     color: $nav-text-color;
     font-size: 14px;
+
 }
 .nav-elem svg path{
   fill: $text-color; 
@@ -19,7 +20,11 @@
 .nav-elem {
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    
+    &:hover{
+        opacity: 0.8;  
+    }
 }
 .nav-col a p{
     color: $text-color;
@@ -33,6 +38,7 @@
     padding: 0;
     margin: 0;
     transform: translate(0, -10px);
+    text-align: left
 }
 ul {
     list-style-type: none;

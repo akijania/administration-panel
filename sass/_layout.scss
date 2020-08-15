@@ -9,22 +9,35 @@
     line-height: 1.7;
     color: $text-color;
     background: $background-hover-color;
+    text-align: center;
+
   }
-  
+  section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  }
   .container {
-    max-width: 1170px;
     margin: 15px;
-    padding: 30px 15px;
+    padding: 10px 0px;
     background: $nav-text-color;
+    width: 100%;
+    max-width: 1400px;
     border-bottom: 1px solid $background-hover-color;
-    border-radius: 4px;
+    border-radius: 10px;
+    text-align: center;
+
 
   }
   
   .container-fluid {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+
+
   }
   .row {
     display: flex;

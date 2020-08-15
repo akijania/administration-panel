@@ -1,0 +1,21 @@
+.links-row {
+    width: 80%;
+    max-width: 900px;
+    text-align: left;
+    border-bottom: 1px solid $text-color;
+    &:hover {
+        background-color: $background-hover-color;
+        & .link-edit{
+            display: block;
+        }
+    }
+}
+.links-wrapper {
+    padding: 50px 0;
+}
+.link-edit{
+    display: none;
+    & svg path {
+        fill: $main-color;
+    }
+}

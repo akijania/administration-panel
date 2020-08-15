@@ -2,6 +2,38 @@
 /* Colors */
 /* Font sizes */
 /* Fonts */
+.section-title {
+  padding: 0 10pxm;
+  margin: 0 10px;
+  text-align: left;
+}
+
+hr {
+  border: 0.5px, solid, #979797;
+}
+
+.btn {
+  background: #F58220;
+  color: white;
+  border-color: #F58220;
+  border-radius: 4px;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn svg path {
+  fill: white;
+}
+
+.btn:hover {
+  background: #979797;
+  border-color: #979797;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -352,21 +384,38 @@ body {
   line-height: 1.7;
   color: #979797;
   background: #F5F5F2;
+  text-align: center;
+}
+
+section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: left;
 }
 
 .container {
-  max-width: 1170px;
   margin: 15px;
-  padding: 30px 15px;
+  padding: 10px 0px;
   background: white;
+  width: 100%;
+  max-width: 1400px;
   border-bottom: 1px solid #F5F5F2;
-  border-radius: 4px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .container-fluid {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 30px;
 }
 
 .row {
@@ -727,6 +776,10 @@ body {
   padding: 0;
 }
 
+.nav-elem:hover {
+  opacity: 0.8;
+}
+
 .nav-col a p {
   color: #979797;
   transform: translate(0, -15px);
@@ -739,6 +792,7 @@ body {
   padding: 0;
   margin: 0;
   transform: translate(0, -10px);
+  text-align: left;
 }
 
 ul {
@@ -791,6 +845,7 @@ li {
 
 .general-form {
   text-align: center;
+  padding: 15px;
 }
 
 .statistic-col {
@@ -801,5 +856,32 @@ li {
 .statistic-value {
   text-align: right;
   border-bottom: 1px solid #979797;
+}
+
+.links-row {
+  width: 80%;
+  max-width: 900px;
+  text-align: left;
+  border-bottom: 1px solid #979797;
+}
+
+.links-row:hover {
+  background-color: #F5F5F2;
+}
+
+.links-row:hover .link-edit {
+  display: block;
+}
+
+.links-wrapper {
+  padding: 50px 0;
+}
+
+.link-edit {
+  display: none;
+}
+
+.link-edit svg path {
+  fill: #F58220;
 }
 /*# sourceMappingURL=style.css.map */

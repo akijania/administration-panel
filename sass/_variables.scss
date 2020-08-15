@@ -22,6 +22,45 @@ $btn-disabled-color: #E3E3E3;
 $paragraph-font-size: 16px;
 
 /* Fonts */
-$brand-font: 'Cookie', cursive;
-$paragraph-font: "Open Sans", Helvetica, Arial;
-$text-font: "Open Sans", Helvetica, Arial;
+$brand-font: 'Cookie',
+cursive;
+$paragraph-font: "Open Sans",
+Helvetica,
+Arial;
+$text-font: "Open Sans",
+Helvetica,
+Arial;
+
+.section-title {
+    padding: 0 10pxm;
+    margin: 0 10px;
+    text-align: left;
+
+}
+
+hr {
+    border: 0.5px, solid, $text-color;
+}
+
+.btn {
+    background: $main-color;
+    color: $nav-text-color;
+    border-color: $main-color;
+    border-radius: 4px;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+
+    & svg path {
+        fill: $nav-text-color;
+
+    }
+
+    &:hover {
+        background: $text-color;
+        border-color: $text-color;
+    }
+}
