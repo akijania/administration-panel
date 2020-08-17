@@ -388,13 +388,17 @@ body {
 }
 
 section {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
   text-align: left;
+  display: none;
+}
+
+.active {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container {
@@ -749,19 +753,18 @@ section {
   }
 }
 
-.nav {
-  position: relative;
+nav {
+  position: fixed;
 }
 
 .nav-col {
   background-color: #000000;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   width: 100%;
   display: block;
   margin: 0;
-  padding: 10px;
+  padding: 10px 0px;
   color: white;
   font-size: 14px;
 }
@@ -772,24 +775,19 @@ section {
 
 .nav-elem {
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-elem:hover {
-  opacity: 0.8;
+  margin: 10px;
+  padding: 0px;
 }
 
 .nav-col a p {
   color: #979797;
-  transform: translate(0, -15px);
 }
 
 .brand-text {
   font-family: "Cookie", cursive;
   font-size: 24px;
   color: white;
-  padding: 0;
+  padding-left: 20px;
   margin: 0;
   transform: translate(0, -10px);
   text-align: left;
@@ -800,14 +798,34 @@ ul {
   text-align: left;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 li {
   text-align: left;
   height: 40px;
   max-height: 40px;
-  margin: 0 10px;
+  margin: 0;
   padding: 0;
+}
+
+li::after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 40px;
+  background-color: #f6b93b;
+  z-index: 1;
+  transform: translate(0, -50px);
+  display: none;
+}
+
+li:hover {
+  background-color: #333333;
+}
+
+li:hover::after {
+  display: block;
 }
 
 ​a:visited, a:link, a:hover {
@@ -817,6 +835,40 @@ li {
 
 .nav-col hr {
   border: 1px solid #979797;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+  .nav-col {
+    height: 50px;
+  }
+  nav {
+    width: 100%;
+  }
+  section {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: block;
+  }
+  .nav-col {
+    height: 100vh;
+  }
+  nav {
+    width: 220px;
+  }
+  section {
+    padding-left: 220px;
+  }
+}
+
+header {
+  padding-left: 200px;
 }
 
 .header-col {

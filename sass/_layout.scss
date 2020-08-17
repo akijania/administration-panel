@@ -13,10 +13,13 @@
 
   }
   section {
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
+  display: none;
+  }
+  .active{
+    display: flex;
   }
   .container {
     margin: 15px;
