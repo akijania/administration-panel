@@ -34,6 +34,16 @@ hr {
   border-color: #979797;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #E3E3E3;
+  outline: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

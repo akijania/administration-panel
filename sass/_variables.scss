@@ -14,6 +14,7 @@ $nav-text-color: white;
 $background-hover-color: #F5F5F2;
 $btn-disabled-color: #E3E3E3;
 $header-border-color: #E3E3E3;
+$border-color: #E3E3E3;
 
 
 
@@ -65,3 +66,14 @@ hr {
         border-color: $text-color;
     }
 }
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"]
+ {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid $border-color;
+    outline: none;
+  }
