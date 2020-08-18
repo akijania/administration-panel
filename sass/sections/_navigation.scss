@@ -24,6 +24,8 @@ nav {
 }
 .nav-col a p{
     color: $text-color;
+    transform: translate(0, -5px);
+
 }
 
 .brand-text {
@@ -60,6 +62,13 @@ li {
     }
     &:hover {
         background-color: lighten($paragraph-color, 20%); 
+        & p{
+            color: white;
+            & svg path{
+                fill: white; 
+              }
+
+        } 
         &::after{
             display: block;
         }

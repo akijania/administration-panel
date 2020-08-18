@@ -9,7 +9,7 @@
 }
 
 hr {
-  border: 0.5px, solid, #979797;
+  border: 1px solid #F5F5F2;
 }
 
 .btn {
@@ -419,7 +419,7 @@ section {
       flex-wrap: wrap;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 30px;
+  padding: 30px 0;
 }
 
 .row {
@@ -781,6 +781,7 @@ nav {
 
 .nav-col a p {
   color: #979797;
+  transform: translate(0, -5px);
 }
 
 .brand-text {
@@ -822,6 +823,14 @@ li::after {
 
 li:hover {
   background-color: #333333;
+}
+
+li:hover p {
+  color: white;
+}
+
+li:hover p svg path {
+  fill: white;
 }
 
 li:hover::after {
@@ -872,7 +881,7 @@ header {
 }
 
 .header-col {
-  border: 0.5px solid #979797;
+  border: 0.5px solid #E3E3E3;
   background: white;
   width: 100%;
   height: 50px;
@@ -935,5 +944,16 @@ header {
 
 .link-edit svg path {
   fill: #F58220;
+}
+
+.field {
+  text-align: left;
+  padding: 10px;
+}
+
+.form-data {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
