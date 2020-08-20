@@ -14,6 +14,10 @@ header {
     & a {
         line-height: 20px;  
         color: $link-color;
+        &:hover {
+            text-decoration: none;
+            color: $main-hover-color;
+        }
 
     }    
 }
@@ -37,5 +41,9 @@ header {
         border-radius: 3px;
         left: 20px;
 
-        // transform: translate(0, -50px);
+}
+.header-col a:hover {
+    & svg path {
+        fill: $main-hover-color;
+    }
 }

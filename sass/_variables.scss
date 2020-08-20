@@ -79,9 +79,12 @@ select
     border: 1px solid $border-color;
     outline: none;
   }
+  input[type="range"] {
+    border: 1px solid $border-color;
+    outline: none;
+  }
 
-  ​a:visited, a:hover
-  {
+  ​a:visited, a:hover {
       text-decoration: none;
       color: $main-hover-color;
   }
@@ -89,3 +92,15 @@ select
     text-decoration: none;
     color: $link-color;
   }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid $border-color;
+    padding: 5px 30px 5px 10px;
+    font-size: 14px;
+    display: block;
+    border-radius: 0;
+ }

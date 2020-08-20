@@ -223,11 +223,11 @@
               </div>
 
               <div class="col-sm-1 header-col">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                <a class="quit" href="#qiut"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                   y="0px" viewBox="0 0 19 15" style="enable-background:new 0 0 19 15;" xml:space="preserve" height="20">
                   <path
                     d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,14H1V1h9v3h1V0H0v15h11v-4h-1V14z" />
-                </svg>
+                </svg></a>
               </div>
             </div>
           
@@ -274,22 +274,22 @@
           </div>
           <div class="col-sm-5 header-col row">
             <div class="col-sm-3">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              <a href=""><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve" width="20">
                 <path d="M9.5,4C7.6,4,6,5.6,6,7.5S7.6,11,9.5,11S13,9.4,13,7.5S11.4,4,9.5,4z M9.5,10C8.1,10,7,8.9,7,7.5S8.1,5,9.5,5S12,6.1,12,7.5
                S10.9,10,9.5,10z M9.5,1C4.8,1,1,4.8,1,9.5S4.8,18,9.5,18S18,14.2,18,9.5S14.2,1,9.5,1z M14,15.5c0-1.8-0.1-3.5-1.3-4.8l-0.7,0.7
                c1.1,1.1,1.1,2.7,1.1,4.5l0,0.3c-1,0.6-2.2,0.9-3.5,0.9S7,16.7,6,16.1l0-0.3c0-1.8,0-3.4,1.1-4.5l-0.7-0.7C5.1,12,5,13.7,5,15.5
                c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,14,15.5z" />
-              </svg></div>
+              </svg></a></div>
             <div class="col-sm-3"><a href="">LeonardoDiCaprio</a></div>
           </div>
 
           <div class="col-sm-1 header-col">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            <a class="quit" href="#qiut"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
               y="0px" viewBox="0 0 19 15" style="enable-background:new 0 0 19 15;" xml:space="preserve" height="20">
               <path
                 d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,14H1V1h9v3h1V0H0v15h11v-4h-1V14z" />
-            </svg>
+            </svg></a>
           </div>
         </div>
 
@@ -1082,7 +1082,7 @@
 
 
           </div>
-          <div class="col-sm-12 col-md-6 postback-border">
+          <div class="col-sm-12 col-md-6 postback-border range">
             <input type="range">
           </div>
         </div>
@@ -1095,6 +1095,18 @@
       </form>
     </div>
   </section>
+
+  <div class="overlay" id="overlay">
+    <div class="modal" id="modalQuit">
+      <div class="btn-close js--close-modal">x</div>
+  
+      <p>Do you really want to Quit</p>
+      <hr>
+  
+      <button class="js--close-modal btn">Cancel</button>
+      <button class="js--close-modal btn">Quit</button>
+    </div>
+  </div>
 
 
   <script src="js/script.js"></script>
