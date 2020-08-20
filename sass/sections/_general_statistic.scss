@@ -13,3 +13,13 @@
     border-bottom: 1px solid $text-color;
 
 }
+.scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .scroll-wrapper img {
+    width: auto;
+    max-width: 100%;
+  }

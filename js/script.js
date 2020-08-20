@@ -18,3 +18,13 @@ const links = document.querySelectorAll('.sidebar li a');
 for (let link of links) {
     link.addEventListener('click', activatePage);
 }
+
+
+function toggleMenu(visible) {
+    document.querySelector('.sidebar').classList.toggle('show', visible)
+};
+
+document.querySelector('.hamburger').addEventListener('click', function (e) {
+    e.preventDefault();
+    toggleMenu()
+});
