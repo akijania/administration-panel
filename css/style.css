@@ -1067,14 +1067,16 @@ header {
 }
 
 .scroll-wrapper {
+  padding: 20px 0;
   display: block;
   width: 100%;
   overflow-x: auto;
+  text-align: center;
 }
 
-.scroll-wrapper img {
-  width: auto;
-  max-width: 100%;
+.scroll-wrapper canvas {
+  width: 100%;
+  max-width: 900px;
 }
 
 .links-row {
