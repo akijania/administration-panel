@@ -34,37 +34,37 @@ Helvetica,
 Arial;
 
 .section-title {
-    padding: 0 10pxm;
-    margin: 0 10px;
-    text-align: left;
+  padding: 0 10pxm;
+  margin: 0 10px;
+  text-align: left;
 
 }
 
 hr {
-    border: 1px solid $background-hover-color;
+  border: 1px solid $background-hover-color;
 }
 
 .btn {
-    background: $main-color;
-    color: $nav-text-color;
-    border-color: $main-color;
-    border-radius: 4px;
-    display: inline-block;
-    border-width: 1px;
-    border-style: solid;
-    padding: 7px;
-    text-decoration: none;
-    text-align: center;
+  background: $main-color;
+  color: $nav-text-color;
+  border-color: $main-color;
+  border-radius: 4px;
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  padding: 7px;
+  text-decoration: none;
+  text-align: center;
 
-    & svg path {
-        fill: $nav-text-color;
+  & svg path {
+    fill: $nav-text-color;
 
-    }
+  }
 
-    &:hover {
-        background: $text-color;
-        border-color: $text-color;
-    }
+  &:hover {
+    background: $text-color;
+    border-color: $text-color;
+  }
 }
 
 input[type="text"],
@@ -72,35 +72,37 @@ input[type="email"],
 input[type="number"],
 input[type="password"],
 input[type="date"],
-select
- {
-    padding: 5px 10px;
-    font-size: 14px;
-    border: 1px solid $border-color;
-    outline: none;
-  }
-  input[type="range"] {
-    border: 1px solid $border-color;
-    outline: none;
-  }
+select {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid $border-color;
+  outline: none;
+}
 
-  ​a:visited, a:hover {
-      text-decoration: none;
-      color: $main-hover-color;
-  }
-  a {
-    text-decoration: none;
-    color: $link-color;
-  }
+input[type="range"] {
+  border: 1px solid $border-color;
+  outline: none;
+}
 
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #ffffff;
-    border: 1px solid $border-color;
-    padding: 5px 30px 5px 10px;
-    font-size: 14px;
-    display: block;
-    border-radius: 0;
- }
+​a:visited,
+a:hover {
+  text-decoration: none;
+  color: $main-hover-color;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid $border-color;
+  padding: 5px 30px 5px 10px;
+  font-size: 14px;
+  display: block;
+  border-radius: 0;
+}

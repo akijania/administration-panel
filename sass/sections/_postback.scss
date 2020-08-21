@@ -1,14 +1,17 @@
 .postback-form {
     width: 100%;
     padding: 0 10px;
-    align-items: center; 
+    align-items: center;
     text-align: left;
+
     & p {
         padding-left: 10px;
     }
+
     & label {
         display: block;
     }
+
     & textarea {
         width: 100%;
         height: 200px;
@@ -16,33 +19,36 @@
         outline: none;
         resize: none;
     }
+
     & select {
-        width: 100%;    
+        width: 100%;
     }
 
 }
+
 .postback-border {
     border: 1px solid $border-color;
     text-align: left;
     padding: 20px 0;
-    
+
     & label {
         display: block;
         padding: 10px 0 10px 50px;
     }
 }
+
 .postback-submit {
     padding: 20px;
     text-align: right;
 
 }
+
 .postback-col {
     padding: 10px;
 }
+
 .range {
     text-align: center;
     padding-top: 100px;
 
 }
-
-

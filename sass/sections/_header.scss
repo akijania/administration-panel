@@ -1,6 +1,7 @@
 header {
     padding-left: 200px;
 }
+
 .header-col {
     border: 0.5px solid #E3E3E3;
     background: white;
@@ -10,38 +11,44 @@ header {
     text-align: center;
     line-height: 0;
     color: $text-color;
-   
+
     & a {
-        line-height: 20px;  
+        line-height: 20px;
         color: $link-color;
+
         &:hover {
             text-decoration: none;
             color: $main-hover-color;
         }
 
-    }    
+    }
 }
-.header-col svg path, .header-col svg polygon{
-    fill: $text-color; 
-  }
 
-.col-arrow{
+.header-col svg path,
+.header-col svg polygon {
+    fill: $text-color;
+}
+
+.col-arrow {
     padding-top: 10px;
 }
+
 .bell {
     position: relative;
 }
-.bell::after{
+
+.bell::after {
     position: absolute;
-        content: '';
-        width: 6px;
-        height: 6px;
-        background-color: $negative-notification-hover-color;
-        border: 1px solid $negative-notification-hover-color;
-        border-radius: 3px;
-        left: 20px;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: $negative-notification-hover-color;
+    border: 1px solid $negative-notification-hover-color;
+    border-radius: 3px;
+    left: 20px;
 
 }
+
 .header-col a:hover {
     & svg path {
         fill: $main-hover-color;
