@@ -468,9 +468,10 @@ section {
 
 .table-row {
   width: 95%;
-  max-width: 1000px;
+  max-width: 1200px;
   text-align: left;
   border-bottom: 1px solid #979797;
+  font-size: 12px;
 }
 
 .table-row:hover {
