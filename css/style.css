@@ -74,6 +74,10 @@ select {
   border-radius: 0;
 }
 
+nav svg {
+  width: 15px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1069,14 +1073,15 @@ header {
 .scroll-wrapper {
   padding: 20px 0;
   display: block;
-  width: 100%;
+  width: 90%;
   overflow-x: auto;
   text-align: center;
+  max-width: 900px;
 }
 
 .scroll-wrapper canvas {
   width: 100%;
-  max-width: 900px;
+  max-width: 100%;
 }
 
 .links-row {
@@ -1100,6 +1105,10 @@ header {
 
 .link-edit {
   display: none;
+}
+
+.link-edit svg {
+  width: 15px;
 }
 
 .link-edit svg path {

@@ -19,6 +19,9 @@
 
 .link-edit {
     display: none;
+    & svg {
+        width: 15px;
+      }
 
     & svg path {
         fill: $text-color;
